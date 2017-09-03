@@ -1,5 +1,7 @@
 const yargs = require('yargs')
 
+const axios = require
+
 const geocode = require('./geocode/geocode')
 const weather = require('./weather/weather')
 
@@ -28,6 +30,3 @@ geocode.geocodeAddress(argv.address, ({errorMessage, results}) => {
     })
   }
 })
-
-
-//
